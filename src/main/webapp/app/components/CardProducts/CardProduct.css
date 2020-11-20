@@ -1,0 +1,27 @@
+.row {
+  margin: 0;
+}
+
+.cardPrducts {
+  width: 30%;
+  box-shadow: 9px 13px 20px -6px rgba(0, 0, 0, 0.30);
+  padding: 0 !important;
+  margin: 10px 0;
+}
+
+.cardPrducts .card-header p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.textTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+img {
+  width: 190px;
+  height: 190px;
+  box-sizing: border-box;
+}

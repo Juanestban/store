@@ -9,6 +9,7 @@ import { IRootState } from 'app/shared/reducers';
 import { getEntity } from './product.reducer';
 import { IProduct } from 'app/shared/model/product.model';
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
+import { ListStars } from 'app/components/Stars/Stars';
 
 export interface IProductDetailProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> {}
 
@@ -73,7 +74,9 @@ export const ProductDetail = (props: IProductDetailProps) => {
               <Translate contentKey="storeApp.product.stars">Stars</Translate>
             </span>
           </dt>
-          <dd>{productEntity.stars}</dd>
+          <dd>
+            <ListStars quality={productEntity.stars} />
+          </dd>
           <dt>
             <Translate contentKey="storeApp.product.productCategory">Product Category</Translate>
           </dt>
@@ -98,7 +101,7 @@ export const ProductDetail = (props: IProductDetailProps) => {
 };
 
 const mapStateToProps = ({ product }: IRootState) => ({
-  productEntity: product.entity,
+  productEntity: product.entity
 });
 
 const mapDispatchToProps = { getEntity };

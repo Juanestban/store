@@ -1,0 +1,27 @@
+.container {
+  border: 1px solid tomato;
+}
+
+.contentStar {
+  width: 24px;
+  height: 24px;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.colorStarStandar {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.colorStarPrimary {
+  background-color: orange;
+}
+
+.hoverStar:hover {
+  background-color: orange;
+}
