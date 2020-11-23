@@ -18,6 +18,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
   entry: {
     main: './src/main/webapp/app/index'
   },
+  performance: { hints: false },
   output: {
     path: utils.root('target/classes/static/'),
     filename: 'app/[name].[hash].bundle.js',
@@ -69,10 +70,10 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
             toplevel: true
           },
           output: {
-              comments: false,
-              beautify: false,
-              indent_level: 2,
-              ecma: 6
+            comments: false,
+            beautify: false,
+            indent_level: 2,
+            ecma: 6
           },
           mangle: {
             keep_fnames: true,
