@@ -16,7 +16,7 @@ export const CardProduct = ({ product, Link, match, paginationState }) => {
       </div>
       <div className="card-body">
         <div className="contentImg row justify-content-center pb-2">
-          <img src={`data:${product.imageContentType};base64,${product.image}`} alt={`imagen-${product.id}`} />
+          <img id="imagen" src={`data:${product.imageContentType};base64,${product.image}`} alt={`imagen-${product.id}`} />
         </div>
         <p className="card-text">{product.description}</p>
         <p>Price: {product.price}</p>
